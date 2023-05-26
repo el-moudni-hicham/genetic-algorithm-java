@@ -1,19 +1,19 @@
-package ma.enset.sma;
+package ma.enset.sma.agents;
 
 import jade.core.AID;
+import jade.core.behaviours.Behaviour;
 import jade.core.behaviours.CyclicBehaviour;
+import jade.core.behaviours.OneShotBehaviour;
 import jade.domain.DFService;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
 import jade.domain.FIPAException;
 import jade.lang.acl.ACLMessage;
-import ma.enset.sequential.entites.Individual;
 import jade.core.Agent;
+import ma.enset.sma.helpers.FitnessAgent;
+import ma.enset.sma.helpers.GAUtils;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class CentralAgent extends Agent {
     List<FitnessAgent> agentsFitness = new ArrayList<>();
@@ -21,7 +21,6 @@ public class CentralAgent extends Agent {
     @Override
     protected void setup() {
         DFAgentDescription dfAgentDescription = new DFAgentDescription();
-        dfAgentDescription.setName(getAID());
         ServiceDescription serviceDescription = new ServiceDescription();
         serviceDescription.setType("ga");
 
@@ -39,17 +38,28 @@ public class CentralAgent extends Agent {
 
         calculateFitness();
         addBehaviour(new CyclicBehaviour() {
+            int counter = 0;
             @Override
             public void action() {
                 ACLMessage receiveMsg = receive();
+                counter++;
                 if(receiveMsg != null){
                     int fitness = Integer.parseInt(receiveMsg.getContent());
                     AID sender = receiveMsg.getSender();
                     setAgentsFitness(sender, fitness);
+
+                    if(counter == GAUtils.POPULATION_SIZE){
+                        Collections.sort(agentsFitness, Collections.reverseOrder());
+                        showPopulation();
+                    }
+                } else {
+                    block();
                 }
             }
         });
     }
+
+    // Send a message to all agents to calculate its fitness
     private void calculateFitness(){
         ACLMessage message = new ACLMessage(ACLMessage.REQUEST);
 
@@ -60,6 +70,7 @@ public class CentralAgent extends Agent {
         send(message);
     }
 
+    // Get All fitness and store them to List "agentsFitness"
     private void setAgentsFitness(AID aid, int fitness){
         for (int i = 0; i < agentsFitness.size(); i++) {
             if(agentsFitness.get(i).getAid().equals(aid)){
@@ -67,4 +78,13 @@ public class CentralAgent extends Agent {
             }
         }
     }
+
+    // Show agents informations
+    private void showPopulation(){
+        for (FitnessAgent fa : agentsFitness) {
+            System.out.println(fa.getAid().getName() + " " + fa.getFitness());
+        }
+    }
+
 }
+

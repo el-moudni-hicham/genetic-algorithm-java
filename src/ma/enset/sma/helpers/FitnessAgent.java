@@ -1,7 +1,6 @@
-package ma.enset.sma;
+package ma.enset.sma.helpers;
 
 import jade.core.AID;
-import ma.enset.sequential.entites.Individual;
 
 public class FitnessAgent implements Comparable{
     private AID aid;

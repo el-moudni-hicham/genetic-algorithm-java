@@ -1,4 +1,4 @@
-package ma.enset.sma;
+package ma.enset.sma.agents;
 
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
@@ -28,6 +28,7 @@ public class IndividualAgent extends Agent {
         ServiceDescription serviceDescription = new ServiceDescription();
         serviceDescription.setType("ga");
         serviceDescription.setName("ga_ma");
+        dfAgentDescription.addServices(serviceDescription);
         try {
             DFService.register(this, dfAgentDescription);
         } catch (FIPAException e) {
@@ -83,5 +84,14 @@ public class IndividualAgent extends Agent {
 
     private void changeChromosome(ACLMessage receivedMsg) {
         genes = receivedMsg.getContent().toCharArray();
+    }
+
+    @Override
+    protected void takeDown() {
+        try {
+            DFService.deregister(this);
+        } catch (FIPAException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
