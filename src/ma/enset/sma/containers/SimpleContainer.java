@@ -6,10 +6,7 @@ import jade.core.Runtime;
 import jade.wrapper.AgentContainer;
 import jade.wrapper.AgentController;
 import jade.wrapper.StaleProxyException;
-import ma.enset.sma.agents.IndividualAgent;
 import ma.enset.sma.helpers.GAUtils;
-import ma.enset.sma.agents.CentralAgent;
-
 public class SimpleContainer {
     public static void main(String[] args) throws StaleProxyException {
         Runtime runtime = Runtime.instance();
