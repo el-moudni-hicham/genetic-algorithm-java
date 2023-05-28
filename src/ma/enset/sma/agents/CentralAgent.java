@@ -2,8 +2,6 @@ package ma.enset.sma.agents;
 
 import jade.core.AID;
 import jade.core.behaviours.Behaviour;
-import jade.core.behaviours.CyclicBehaviour;
-import jade.core.behaviours.OneShotBehaviour;
 import jade.core.behaviours.SequentialBehaviour;
 import jade.domain.DFService;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
@@ -46,7 +44,6 @@ public class CentralAgent extends Agent {
             @Override
             public void action() {
                 ACLMessage receiveMsg = receive();
-
                 if(receiveMsg != null){
                     counter++;
                     int fitness = Integer.parseInt(receiveMsg.getContent());
@@ -80,6 +77,8 @@ public class CentralAgent extends Agent {
                 Collections.sort(agentsFitness,Collections.reverseOrder());
                 sendMessage(agentsFitness.get(0).getAid(),"chromosome",ACLMessage.REQUEST);
                 ACLMessage aclMessage=blockingReceive();
+                System.out.println("sub beh 4");
+
                 System.out.println(aclMessage.getContent()+" : "+agentsFitness.get(0).getFitness());
                 counter++;
             }
@@ -167,7 +166,8 @@ public class CentralAgent extends Agent {
     }
 
     // Send a message to all agents to calculate its fitness
-    private void calculateFitness(){
+    void calculateFitness(){
+        System.out.println("Calculate Fitness");
         ACLMessage message = new ACLMessage(ACLMessage.REQUEST);
 
         for (FitnessAgent fa: agentsFitness) {
