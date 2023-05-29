@@ -1,18 +1,19 @@
 # 🧬 Genetic Algorithm Implementation with java 
 ```
-The repository contains three versions of a Genetic Algorithm implementation in Java. The first version is a sequential 
-implementation, the second version utilizes SMA, and the third version incorporates an Island Model, allowing for parallel
-execution and intercommunication between multiple populations. These implementations provide different approaches for 
-solving optimization problems using genetic algorithms in a Java environment.
+The repository contains three versions of a Genetic Algorithm implementation in Java. The first version is
+a sequential implementation, the second version utilizes SMA, and the third version incorporates an Island 
+Model, allowing for parallel execution and intercommunication between multiple populations. These 
+implementations provide different approaches for solving optimization problems using genetic algorithms in
+a Java environment.
 ```
-## Summary
+## Table of Contents
 - [Genetic Algorithm](#genetic-algorithm)
     - [Definition](#definition)
     - [Pseudocode](#pseudocode)
     - [Steps](#steps)
 - [Sequential Genetic Algorithm](#sequential-genetic-algorithm)
-- [Genetic Algorithm with SMA](#example-implementation-in-java-to-guess-a-word )
-- [Genetic Algorithm Island with Model](#example-implementation-in-java-to-guess-a-word )
+- [Genetic Algorithm with SMA](#genetic-algorithm-with-sma)
+- [Genetic Algorithm with Island Model](#genetic-algorithm-with-island-model)
 
 # Genetic Algorithm
 ### Definition
@@ -140,7 +141,7 @@ Mutation occurs to maintain diversity within the population and prevent prematur
 
 The algorithm terminates if the population has converged. Then it is said that the genetic algorithm has provided a set of solutions to our problem.
 
-## Sequential Genetic Algorithm
+# Sequential Genetic Algorithm
 
 1. Initial population 
 
@@ -263,15 +264,23 @@ The algorithm terminates if the population has converged. Then it is said that t
    ```
    
    * TEST : 
-   Word to Guess `sdia`
-   
+   Word to Guess `Hicham EL MOUDNI`
+
 <table>
 <tr>
 <td width="50%">
           <p align="center">
-             <img src="https://user-images.githubusercontent.com/85403056/237059504-8489439b-d49f-4046-ba92-9293a6c5f887.png" alt="project example"/>
+             <img src="https://github.com/el-moudni-hicham/genetic-algorithm-java/assets/85403056/5f831fd0-2a1d-41f4-ba9a-8e6211710732" alt="project example"/>
             </p>
  </td>
 </tr>
 </table>
+
+# Genetic Algorithm with SMA
+
+
+# Genetic Algorithm with Island Model
+
+![island-model](https://github.com/el-moudni-hicham/genetic-algorithm-java/assets/85403056/38c9fa33-4f70-44a1-9f24-a8a98f14e5ef)
+
 
