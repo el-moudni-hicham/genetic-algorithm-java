@@ -316,7 +316,15 @@ D:.
 - TEST : 
    Word to Guess `Hicham EL MOUDNI`
    
-   ![sma](https://github.com/el-moudni-hicham/genetic-algorithm-java/assets/85403056/f6a77af9-9044-4334-ae31-2066462937be)
+   <table>
+<tr>
+<td width="50%">
+          <p align="center">
+             <img src="https://github.com/el-moudni-hicham/genetic-algorithm-java/assets/85403056/f6a77af9-9044-4334-ae31-2066462937be" alt="project example"/>
+            </p>
+ </td>
+</tr>
+</table>
 
 
 # Genetic Algorithm with Island Model
