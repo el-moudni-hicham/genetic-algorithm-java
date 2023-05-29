@@ -7,7 +7,7 @@ These implementations provide different approaches for solving optimization prob
 algorithms in a Java environment.
 ```
 ## Table of Contents
-- [Genetic Algorithm](#genetic-algorithm)
+- [Genetic Algorithm](#genetic-algorithm) https://github.com/el-moudni-hicham/genetic-algorithm-java/tree/master/src/ma/enset/sequential
     - [Definition](#definition)
     - [Pseudocode](#pseudocode)
     - [Steps](#steps)
@@ -142,6 +142,7 @@ Mutation occurs to maintain diversity within the population and prevent prematur
 The algorithm terminates if the population has converged. Then it is said that the genetic algorithm has provided a set of solutions to our problem.
 
 # Sequential Genetic Algorithm
+[Link to project](https://github.com/el-moudni-hicham/genetic-algorithm-java/tree/master/src/ma/enset/sequential)
 
 ### Project Structure 
 
@@ -292,6 +293,8 @@ D:.
 </table>
 
 # Genetic Algorithm with SMA
+[Link to project](https://github.com/el-moudni-hicham/genetic-algorithm-java/tree/master/src/ma/enset/sma)
+
 ### Project Structure 
 
 <pre>
@@ -311,6 +314,7 @@ D:.
 </pre>
 
 # Genetic Algorithm with Island Model
+[Link to project](https://github.com/el-moudni-hicham/genetic-algorithm-java/tree/master/src/ma/enset/island_model)
 
 ```
 Island Model Genetic Algorithm (IMGA) is a distributed model of GA which splits its main computational
