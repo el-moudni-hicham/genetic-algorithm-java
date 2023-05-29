@@ -7,7 +7,7 @@ These implementations provide different approaches for solving optimization prob
 algorithms in a Java environment.
 ```
 ## Table of Contents
-- [Genetic Algorithm](#genetic-algorithm) https://github.com/el-moudni-hicham/genetic-algorithm-java/tree/master/src/ma/enset/sequential
+- [Genetic Algorithm](#genetic-algorithm)
     - [Definition](#definition)
     - [Pseudocode](#pseudocode)
     - [Steps](#steps)
