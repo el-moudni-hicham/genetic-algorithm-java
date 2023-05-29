@@ -143,6 +143,21 @@ The algorithm terminates if the population has converged. Then it is said that t
 
 # Sequential Genetic Algorithm
 
+### Project Structure 
+
+<pre>
+D:.
+├───application
+│       GA.java
+│
+├───entites
+│       Individual.java
+│       Population.java
+│
+└───helpers
+        GAUtils.java
+</pre>
+
 1. Initial population 
 
    - Create Individual :
@@ -277,9 +292,51 @@ The algorithm terminates if the population has converged. Then it is said that t
 </table>
 
 # Genetic Algorithm with SMA
+### Project Structure 
 
+<pre>
+D:.
+├───agents
+│       CentralAgent.java
+│       IndividualAgent.java
+│
+├───containers
+│       CentralContainer.java
+│       MainContainer.java
+│       SimpleContainer.java
+│
+└───helpers
+        FitnessAgent.java
+        GAUtils.java
+</pre>
 
 # Genetic Algorithm with Island Model
+
+```
+Island Model Genetic Algorithm (IMGA) is a distributed model of GA which splits its main computational
+process into several computers (islands) instead of running it in only one machine. This mechanism 
+offers higher scalability and gives better chance to evade the local optimum trap.
+```
+
+### Project Structure 
+
+<pre>
+D:.
+├───agents
+│       IslandAgent.java
+│       MasterAgent.java
+│
+├───containers
+│       MainContainer.java
+│       MasterContainer.java
+│       SimpleContainer.java
+│
+├───entites
+│       Individual.java
+│
+└───helpers
+        GAUtils.java
+</pre>
 
 ![island-model](https://github.com/el-moudni-hicham/genetic-algorithm-java/assets/85403056/38c9fa33-4f70-44a1-9f24-a8a98f14e5ef)
 
