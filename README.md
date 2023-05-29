@@ -320,7 +320,7 @@ D:.
 <tr>
 <td width="50%">
           <p align="center">
-             <img src="https://github.com/el-moudni-hicham/genetic-algorithm-java/assets/85403056/f6a77af9-9044-4334-ae31-2066462937be" alt="project example"/>
+             <img src="https://github.com/el-moudni-hicham/genetic-algorithm-java/assets/85403056/e20c0d4e-fe8f-444d-9901-96ad5beef83c" alt="project example"/>
             </p>
  </td>
 </tr>
