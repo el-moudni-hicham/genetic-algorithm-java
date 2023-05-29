@@ -1,18 +1,27 @@
-# 🧬 Genetic Algorithm
-
+# 🧬 Genetic Algorithm Implementation with java 
+```
+The repository contains three versions of a Genetic Algorithm implementation in Java. The first version is a sequential 
+implementation, the second version utilizes SMA, and the third version incorporates an Island Model, allowing for parallel
+execution and intercommunication between multiple populations. These implementations provide different approaches for 
+solving optimization problems using genetic algorithms in a Java environment.
+```
 ## Summary
-* [Genetic Algorithm Definition](#genetic-algorithm-definition)
-* [Genetic Algorithm Pseudocode](#genetic-algorithm-pseudocode)
-* [Genetic Algorithm Steps](#genetic-algorithm-steps)
-* [Example Implementation in Java to Guess a Word ](#example-implementation-in-java-to-guess-a-word )
+- [Genetic Algorithm](#genetic-algorithm)
+    - [Definition](#definition)
+    - [Pseudocode](#pseudocode)
+    - [Steps](#steps)
+- [Sequential Genetic Algorithm](#sequential-genetic-algorithm)
+- [Genetic Algorithm with SMA](#example-implementation-in-java-to-guess-a-word )
+- [Genetic Algorithm Island with Model](#example-implementation-in-java-to-guess-a-word )
 
-### Genetic Algorithm Definition
+# Genetic Algorithm
+### Definition
 
 Genetic algorithm (GA) is a metaheuristic inspired by the process of natural selection that belongs to the larger class of evolutionary 
 algorithms (EA). Genetic algorithms are commonly used to generate high-quality solutions to optimization and search problems by relying 
 on biologically inspired operators such as mutation, crossover and selection .
 
-### Genetic Algorithm Pseudocode
+### Pseudocode
 
 ```java
 START
@@ -56,7 +65,7 @@ Fitness Function
 </tr>
 </table>
 
-### 3. Genetic Algorithm Steps
+### Steps
 
 Five phases are considered in a genetic algorithm :
 1. Initial population
@@ -131,7 +140,7 @@ Mutation occurs to maintain diversity within the population and prevent prematur
 
 The algorithm terminates if the population has converged. Then it is said that the genetic algorithm has provided a set of solutions to our problem.
 
-## Example Implementation in Java to Guess a Word 
+## Sequential Genetic Algorithm
 
 1. Initial population 
 
