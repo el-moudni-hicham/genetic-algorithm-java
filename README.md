@@ -294,7 +294,7 @@ D:.
 
 # Genetic Algorithm with SMA
 
-An Agent for each chromosome 
+An agent for each chromosome 
 
 [Link to project](https://github.com/el-moudni-hicham/genetic-algorithm-java/tree/master/src/ma/enset/sma)
 
