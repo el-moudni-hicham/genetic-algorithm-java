@@ -313,6 +313,12 @@ D:.
         GAUtils.java
 </pre>
 
+- TEST : 
+   Word to Guess `Hicham EL MOUDNI`
+   
+   ![sma](https://github.com/el-moudni-hicham/genetic-algorithm-java/assets/85403056/f6a77af9-9044-4334-ae31-2066462937be)
+
+
 # Genetic Algorithm with Island Model
 [Link to project](https://github.com/el-moudni-hicham/genetic-algorithm-java/tree/master/src/ma/enset/island_model)
 
