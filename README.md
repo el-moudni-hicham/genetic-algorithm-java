@@ -1,10 +1,10 @@
 # 🧬 Genetic Algorithm Implementation with java 
 ```
-The repository contains three versions of a Genetic Algorithm implementation in Java. The first version is
-a sequential implementation, the second version utilizes SMA, and the third version incorporates an Island 
-Model, allowing for parallel execution and intercommunication between multiple populations. These 
-implementations provide different approaches for solving optimization problems using genetic algorithms in
-a Java environment.
+The repository contains three versions of a Genetic Algorithm implementation in Java. The first version
+is a sequential implementation, the second version utilizes SMA, and the third version incorporates an 
+Island Model, allowing for parallel execution and intercommunication between multiple populations.
+These implementations provide different approaches for solving optimization problems using genetic 
+algorithms in a Java environment.
 ```
 ## Table of Contents
 - [Genetic Algorithm](#genetic-algorithm)
