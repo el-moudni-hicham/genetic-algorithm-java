@@ -319,16 +319,17 @@ D:.
 - TEST : 
    Word to Guess `Hicham EL MOUDNI`
    
-   
-<table>
+      <table>
 <tr>
 <td width="50%">
           <p align="center">
-             <img src="https://github.com/el-moudni-hicham/genetic-algorithm-java-jade/assets/85403056/a827e49d-c3f4-4b8c-a709-352de4f1b9b3" alt="project example"/>
+             <img src="https://github.com/el-moudni-hicham/genetic-algorithm-java/assets/85403056/e20c0d4e-fe8f-444d-9901-96ad5beef83c" alt="project example"/>
             </p>
  </td>
 </tr>
 </table>
+   
+
 
 
 # Genetic Algorithm with Island Model
@@ -349,17 +350,15 @@ one of the most popular approach to parallel genetic algorithms, even though the
 often called ‘island model’ because populations are isolated from each other, like real-life creature populations 
 may be isolated living on different islands. Image 1 illustrates that.
 
-   <table>
+<table>
 <tr>
 <td width="50%">
           <p align="center">
-             <img src="https://github.com/el-moudni-hicham/genetic-algorithm-java/assets/85403056/e20c0d4e-fe8f-444d-9901-96ad5beef83c" alt="project example"/>
+             <img src="https://github.com/el-moudni-hicham/genetic-algorithm-java-jade/assets/85403056/a827e49d-c3f4-4b8c-a709-352de4f1b9b3" alt="project example"/>
             </p>
  </td>
 </tr>
 </table>
-
-A parallel genetic algorithm may take a little more time than a non-parallel one, that is because is uses several computation threads which, in turn, cause the Operation System to perform context switching more frequently. Nevertheless, parallel genetic algorithm tend to produce better results and more optimal individuals than a non-parallel one.
 
 ### Project Structure 
 
@@ -385,5 +384,10 @@ D:.
    Word to Guess `Hicham EL MOUDNI`
    
 ![island-model](https://github.com/el-moudni-hicham/genetic-algorithm-java/assets/85403056/38c9fa33-4f70-44a1-9f24-a8a98f14e5ef)
+
+A parallel genetic algorithm may take a little more time than a non-parallel one, that is because is uses several
+computation threads which, in turn, cause the Operation System to perform context switching more frequently. 
+Nevertheless, parallel genetic algorithm tend to produce better results and more optimal individuals than 
+a non-parallel one.
 
 
