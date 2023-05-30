@@ -1,4 +1,4 @@
-# 🧬 Genetic Algorithm Implementation with java / Jade
+# 🧬 Genetic Algorithm Implementation with Java / Jade
 ```
 The repository contains three versions of a Genetic Algorithm implementation in Java. The first version
 is a sequential implementation, the second version utilizes SMA, and the third version incorporates an 
