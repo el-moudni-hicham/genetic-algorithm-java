@@ -319,11 +319,12 @@ D:.
 - TEST : 
    Word to Guess `Hicham EL MOUDNI`
    
-   <table>
+   
+<table>
 <tr>
 <td width="50%">
           <p align="center">
-             <img src="https://github.com/el-moudni-hicham/genetic-algorithm-java/assets/85403056/e20c0d4e-fe8f-444d-9901-96ad5beef83c" alt="project example"/>
+             <img src="https://github.com/el-moudni-hicham/genetic-algorithm-java-jade/assets/85403056/a827e49d-c3f4-4b8c-a709-352de4f1b9b3" alt="project example"/>
             </p>
  </td>
 </tr>
@@ -338,6 +339,27 @@ Island Model Genetic Algorithm (IMGA) is a distributed model of GA which splits 
 process into several computers (islands) instead of running it in only one machine. This mechanism 
 offers higher scalability and gives better chance to evade the local optimum trap.
 ```
+
+Parallel genetic algorithm
+
+Parallel genetic algorithm is such an algorithm that uses multiple genetic algorithms to solve a single task .
+All these algorithms try to solve the same task and after they’ve completed their job, the best individual of 
+every algorithm is selected, then the best of them is selected, and this is the solution to a problem. This is
+one of the most popular approach to parallel genetic algorithms, even though there are others. This approach is
+often called ‘island model’ because populations are isolated from each other, like real-life creature populations 
+may be isolated living on different islands. Image 1 illustrates that.
+
+   <table>
+<tr>
+<td width="50%">
+          <p align="center">
+             <img src="https://github.com/el-moudni-hicham/genetic-algorithm-java/assets/85403056/e20c0d4e-fe8f-444d-9901-96ad5beef83c" alt="project example"/>
+            </p>
+ </td>
+</tr>
+</table>
+
+A parallel genetic algorithm may take a little more time than a non-parallel one, that is because is uses several computation threads which, in turn, cause the Operation System to perform context switching more frequently. Nevertheless, parallel genetic algorithm tend to produce better results and more optimal individuals than a non-parallel one.
 
 ### Project Structure 
 
