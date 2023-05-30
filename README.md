@@ -294,9 +294,9 @@ D:.
 
 # Genetic Algorithm with SMA
 
-An agent for each chromosome 
-
 [Link to project](https://github.com/el-moudni-hicham/genetic-algorithm-java/tree/master/src/ma/enset/sma)
+
+In this approch we use an agent for each chromosome.
 
 ### Project Structure 
 
@@ -319,7 +319,8 @@ D:.
 - TEST : 
    Word to Guess `Hicham EL MOUDNI`
    
-      <table>
+   
+<table>
 <tr>
 <td width="50%">
           <p align="center">
